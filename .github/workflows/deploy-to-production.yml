@@ -18,12 +18,12 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_PRODUCTION_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_PRODUCTION_SECRET_ACCESS_KEY }}
-          AWS_REGION: us-west-2
+          AWS_REGION: us-east-1
           CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
         run: |
           cd ./src
           npm install
           npm run build
           cd ./web/public
-          aws s3 sync . s3://brave-production-griffin-origin/ --delete --exclude '*' --include 'index.html' --include 'bundle/*'
+          aws s3 sync . s3://variations.mises/dash/ --delete --exclude '*' --include 'index.html' --include 'bundle/*'
           aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"

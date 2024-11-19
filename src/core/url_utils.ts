@@ -5,8 +5,8 @@
 
 import { SeedType } from './base_types';
 
-export const variationsProductionUrl = 'https://variations.brave.com/seed';
-export const variationsStagingUrl = 'https://variations.bravesoftware.com/seed';
+export const variationsProductionUrl = 'https://variations.mises.site/seed.bin';
+export const variationsStagingUrl = 'https://variations.test.mises.site/seed.bin';
 export const variationsUpstreamUrl =
   'https://griffin.brave.com/finch-data-private/seed.bin';
 

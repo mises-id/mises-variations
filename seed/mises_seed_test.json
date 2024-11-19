@@ -1,0 +1,402 @@
+{
+    "studies": [
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "Vulkan"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "parameters": [
+                        {
+                            "name": "BlockListByBoard",
+                            "value": "RM67*|RM68*|k68*|mt6*|oppo67*|oppo68*|QM215|rk30sdk|secret|maltose|rosemary|HLTE322E*|lisbon|lancelot|Infinix-X695|g2062upt_v1_gd_sh2_gq_eea_r|cannong|TECNO-CG8"
+                        },
+                        {
+                            "name": "disable_by_gl_renderer",
+                            "value": "*Mali-G72*|*Mali-G?? M*"
+                        },
+                        {
+                            "name": "enable_by_device_name",
+                            "value": "Adreno*630"
+                        }
+                    ],
+                    "probability_weight": 100
+                },
+                {
+                    "feature_association": {
+                        "disable_feature": [
+                            "Vulkan"
+                        ]
+                    },
+                    "name": "Disabled",
+                    "probability_weight": 0
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "NIGHTLY",
+                    "BETA",
+                    "RELEASE"
+                ],
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "VulkanStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "MisesBackgroundVideoPlayback"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "probability_weight": 100
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "NIGHTLY",
+                    "BETA"
+                ],
+                "min_version": "106.1.46.37",
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "BgPlaybackStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "MisesBackgroundVideoPlayback"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "probability_weight": 100
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "RELEASE"
+                ],
+                "min_version": "110.1.48.164",
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "BgPlaybackStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "HttpsByDefault"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "probability_weight": 100
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "NIGHTLY",
+                    "BETA"
+                ],
+                "min_version": "110.1.50.67",
+                "platform": [
+                    "WINDOWS",
+                    "MAC",
+                    "LINUX"
+                ]
+            },
+            "name": "MisesHttpsByDefaultRolloutStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "HttpsByDefault"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "probability_weight": 100
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "RELEASE"
+                ],
+                "min_version": "110.1.50.67",
+                "platform": [
+                    "WINDOWS",
+                    "MAC",
+                    "LINUX"
+                ]
+            },
+            "name": "MisesHttpsByDefaultRolloutStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "HttpsByDefault"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "probability_weight": 100
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "NIGHTLY",
+                    "BETA"
+                ],
+                "min_version": "111.1.51.44",
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "MisesHttpsByDefaultRolloutStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "HttpsByDefault"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "probability_weight": 100
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "RELEASE"
+                ],
+                "min_version": "111.1.51.44",
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "MisesHttpsByDefaultRolloutStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "DefaultPassthroughCommandDecoder"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "parameters": [
+                        {
+                            "name": "BlockListByModel",
+                            "value": "5030D_EEA|ASUS_Z008D|ASUS_Z00AD|CPH2*|Galaxy Tab 2 3G|GT-I9500|Infinix X6*|K016|K01Q|Lenovo TB-X*|LM-*|M2006C3*|moto e*|moto g*|MRD-LX1|Nokia 2.3|P01M*|P01T_1|RMX2185|SM-A*|Star 4|TBT8A10|TECNO K*|vivo*"
+                        }
+                    ],
+                    "probability_weight": 100
+                },
+                {
+                    "feature_association": {
+                        "disable_feature": [
+                            "DefaultPassthroughCommandDecoder"
+                        ]
+                    },
+                    "name": "Disabled",
+                    "probability_weight": 0
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "NIGHTLY",
+                    "BETA",
+                    "RELEASE"
+                ],
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "DefaultPassthroughCommandDecoderStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "MisesSearch"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "probability_weight": 100
+                },
+                {
+                    "feature_association": {
+                        "disable_feature": [
+                            "MisesSearch"
+                        ]
+                    },
+                    "name": "Disabled",
+                    "probability_weight": 0
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "RELEASE"
+                ],
+                "min_version": "120.0.6099.144",
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "MisesSearchRolloutStudy"
+        },
+        
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "MisesPreinstallExtension"
+                        ]
+                    },
+                    "name": "Enabled",
+                    "parameters": [
+                        {
+                            "name": "ExtensionList",
+                            "value": "hmeobnfnfcmdkdcmlblgagmfpfboieaf,mgcmocglffknmbhhfjihifeldhghihpj,aeachknmefphepccionboohckonoeemg"
+                        },
+                        
+                        {
+                            "name": "ExtensionListWithTOS",
+                            "value": ""
+                        },
+                        
+                        {
+                            "name": "TOS",
+                            "value": ""
+                        }
+                    ],
+                    "probability_weight": 100
+                },
+                {
+                    "feature_association": {
+                        "disable_feature": [
+                            "MisesPreinstallExtension"
+                        ]
+                    },
+                    "name": "Disabled",
+                    "probability_weight": 0
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "NIGHTLY",
+                    "BETA",
+                    "RELEASE"
+                ],
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "MisesPreinstallExtensionStudy"
+        },
+        {
+            "experiments": [
+                {
+                    "feature_association": {
+                        "enable_feature": [
+                            "SmartZoom",
+                            "AccessibilityPageZoom",
+                            "AccessibilityPageZoomEnhancements"
+
+                        ]
+                    },
+                    "name": "Enabled",
+                    "probability_weight": 100
+                },
+                {
+                    "feature_association": {
+                        "disable_feature": [
+                            "SmartZoom",
+                            "AccessibilityPageZoom",
+                            "AccessibilityPageZoomEnhancements"
+                        ]
+                    },
+                    "name": "Disabled",
+                    "probability_weight": 0
+                },
+                {
+                    "name": "Default",
+                    "probability_weight": 0
+                }
+            ],
+            "filter": {
+                "channel": [
+                    "NIGHTLY",
+                    "BETA",
+                    "RELEASE"
+                ],
+                "min_version": "129.0.6668.70",
+                "platform": [
+                    "ANDROID"
+                ]
+            },
+            "name": "MisesZoomRolloutStudy"
+        }
+        
+    ],
+    "version": "2"
+}
